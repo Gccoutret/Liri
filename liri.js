@@ -8,7 +8,6 @@ var Spotify = require("node-spotify-api");
 var spotify = new Spotify(keys.spotify);
 
 function liriDoThis(action){
-  console.log("What can I help you find?");
   var value = process.argv.slice(3).join(" ")  || undefined;
   switch(action){
     case 'movie-this':
